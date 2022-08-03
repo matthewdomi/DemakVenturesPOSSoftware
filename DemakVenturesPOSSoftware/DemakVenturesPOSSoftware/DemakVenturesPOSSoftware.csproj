@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{785D520B-5F8D-4359-BF78-4E9B07EFB337}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DemakVenturesPOSSoftware</RootNamespace>
+    <AssemblyName>DemakVenturesPOSSoftware</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.3, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.3\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="General\ApplicationSetting.cs" />
+    <Compile Include="Screens\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\Register2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Register2.Designer.cs">
+      <DependentUpon>Register2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Screens\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Screens\Register2.resx">
+      <DependentUpon>Register2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2814%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\97409138_2702909619808390_212944255197380608_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D Orange %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atzhm-4hv1a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atzhm-4hv1a-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-arrow-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-arrow-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dog-house-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20220708-WA0008-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\97409138_2702909619808390_212944255197380608_n-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\97409138_2702909619808390_212944255197380608_n-removebg-preview %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dog-house-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-shirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-share1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase-order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\request-service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-share2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-shirt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-shirt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-share3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\request-service1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase-order1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\category1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-insight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-insight1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-box1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create-order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create-order1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cd-collection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cd-collection1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgot-password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgot-password1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgot-password2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send-to-printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send-to-printer1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
